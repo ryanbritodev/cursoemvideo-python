@@ -1,2 +1,7 @@
-import playsound
-playsound.playsound("C:/Users/ryanb/Music/summer-rain-lofi-vibes-216043.mp3")
+import pygame
+pygame.init()
+pygame.mixer.music.load("ex021.mp3")
+pygame.mixer.music.play()
+print("Reproduzindo música...")
+while pygame.mixer.music.get_busy():
+    pygame.time.Clock().tick(10)

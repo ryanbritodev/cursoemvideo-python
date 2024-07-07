@@ -1,7 +1,7 @@
-salario = float(input("Digite o seu salário: "))
+salario = float(input("Digite o seu salário: R$"))
 
-aumentoSalario = ""
-aumento = ""
+aumentoSalario = 0
+aumento = 0
 
 if salario > 1250:
     aumentoSalario = salario + (salario * 0.1)

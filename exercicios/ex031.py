@@ -8,4 +8,4 @@ else:
     print("Sua viagem é longa!")
     distanciaFinal = distancia + (distanciaViagem * 0.45)
 
-print("Valor final da sua viagem: R${}".format(distanciaFinal))
+print("Valor final da sua viagem: R${:.2f}".format(distanciaFinal))

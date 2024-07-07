@@ -1,4 +1,4 @@
-print("----- CONDIÇÃO DE EXISTÊNCIA DE UM TRIÂNGULO -----")
+print("===== CONDIÇÃO DE EXISTÊNCIA DE UM TRIÂNGULO =====")
 
 lado1 = float(input("Digite o tamanho do 1° lado: "))
 lado2 = float(input("Digite o tamanho do 2° lado: "))

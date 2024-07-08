@@ -7,18 +7,21 @@ print("RESULTADO:")
 menor = num1
 if num2 < num1 and num2 < num3:
     menor = num2
-if num3 < num1 and num3 < num2:
+    print("O menor valor digitado foi {}".format(menor))
+elif num3 < num1 and num3 < num2:
     menor = num3
-
+    print("O menor valor digitado foi {}".format(menor))
 # Verificando quem é o maior
 maior = num2
 if num1 > num3 and num1 > num2:
     maior = num1
-if num3 > num2 and num3 > num1:
+    print("O maior valor digitado foi {}".format(maior))
+elif num3 > num2 and num3 > num1:
     maior = num3
+    print("O maior valor digitado foi {}".format(maior))
 
-print("O menor valor digitado foi {}".format(menor))
-print("O maior valor digitado foi {}".format(maior))
+if num1 == num2 == num3:
+    print("Os números são iguais!")
 
 """if num1 > num2 and num1 > num3:
     print("Maior número: {}".format(num1))

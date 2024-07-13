@@ -49,11 +49,11 @@ escolhaJogador = str(input("\nEscolha entre {}PEDRA{}, {}PAPEL{} e {}TESOURA{}: 
 
 print("\n{}VAMOS JOGAR?{}".format("\033[1;33m", "\033[m"))
 sleep(2)
-print("\n{}PEDRA{}".format("\033[1m", "\033[m"))
+print("\n{}JO{}".format("\033[1m", "\033[m"))
 sleep(0.7)
-print("{}PAPEL{}".format("\033[1m", "\033[m"))
+print("{}KEN{}".format("\033[1m", "\033[m"))
 sleep(0.7)
-print("{}TESOURA!{}\n".format("\033[1m", "\033[m"))
+print("{}PÔ!{}\n".format("\033[1m", "\033[m"))
 sleep(0.5)
 
 if escolhaJogador == escolhaComputador:
@@ -74,3 +74,6 @@ elif escolhaJogador == "papel" and escolhaComputador == "pedra":
     print("{}Você GANHOU! O computador escolheu PEDRA!{}".format("\033[1;32m", "\033[m"))
 elif escolhaJogador == "tesoura" and escolhaComputador == "papel":
     print("{}Você GANHOU! O computador escolheu PAPEL!{}".format("\033[1;32m", "\033[m"))
+
+if escolhaJogador != "pedra" and escolhaJogador != "papel" and escolhaJogador != "tesoura":
+    print("{}Escolha inválida!{}".format("\033[1;31m", "\033[m"))

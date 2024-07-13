@@ -19,11 +19,11 @@ imc = peso / pow(altura, 2)
 
 if imc < 18.5:
     print("\nVocê está ABAIXO DO PESO!")
-elif 18.5 <= imc <= 25:
+elif 18.5 <= imc < 25:
     print("\nVocê está no PESO IDEAL! Parabéns!")
-elif 25 < imc <= 30:
+elif 25 <= imc < 30:
     print("\nVocê está com SOBREPESO!")
-elif 30 < imc <= 40:
+elif 30 <= imc < 40:
     print("\nVocê está OBESO!")
-elif imc > 40:
-    print("\nVocê está com OBESIDADE MÓRBIDA!")
+elif imc >= 40:
+    print("\nVocê está com OBESIDADE MÓRBIDA! Cuidado!")

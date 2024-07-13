@@ -1,4 +1,10 @@
-numero = int(input("Digite um número para ver sua tabuada: "))
+print(""" _____  _    ____  _   _   _    ____    _    
+|_   _|/ \  | __ )| | | | / \  |  _ \  / \   
+  | | / _ \ |  _ \| | | |/ _ \ | | | |/ _ \  
+  | |/ ___ \| |_) | |_| / ___ \| |_| / ___ \ 
+  |_/_/   \_\____/ \___/_/   \_\____/_/   \_|""")
+
+numero = int(input("\nDigite um número para ver sua tabuada: "))
 
 titulo = "TABUADA DO {}".format(numero)
 

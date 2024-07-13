@@ -1,3 +1,4 @@
+from sys import exit
 from datetime import date
 
 print("""    _    _     ___ ____ _____  _    __  __ _____ _   _ _____ ___  
@@ -49,16 +50,27 @@ print("""O alistamento militar no Brasil é obrigatório para todos os homens qu
 Se você já passou do prazo para o alistamento, deve regularizar sua situação na Junta de Serviço Militar o quanto antes para evitar problemas futuros.
 """)
 
-anoNascimento = int(input("Informe sua DATA DE NASCIMENTO: "))
-idade = date.today().year - anoNascimento
+print("Vamos descobrir se você deve ou não se alistar?")
+sexo = str(input("Informe seu GÊNERO (masculino ou feminino): ").strip().lower())
 
-if idade == 17:
-    print("Ainda não chegou a hora do seu alistamento! Resta 1 ano.")
-elif idade < 18 and idade != 17:
-    print("Ainda não chegou a hora do seu alistamento! Restam {} anos.".format(18 - idade))
+if sexo == "feminino":
+    sys.exit("Pessoas do gênero feminino não precisam se alistar!")
+elif sexo == "masculino":
+    print(end="")
+else:
+    exit("Resposta inválida!")
+
+anoNascimento = int(input("Informe seu ANO DE NASCIMENTO: ").strip())
+anoAtual = date.today().year
+idade = anoAtual - anoNascimento
+
+if 17 != idade < 18:
+    print("Ainda não chegou a hora do seu alistamento!\nSeu alistamento será em {} (restam {} anos).".format(anoAtual + (18 - idade), (anoAtual + (18 - idade)) - anoAtual))
+elif 17 == idade:
+    print("Ainda não chegou a hora do seu alistamento!\nSeu alistamento será em {} (resta {} ano).".format(anoAtual + (18 - idade), (anoAtual + (18 - idade)) - anoAtual))
 elif idade == 18:
     print("A hora de se alistar chegou!")
-elif idade == 19:
-    print("Você já passou do tempo de se alistar! Já se passou 1 ano desde o prazo.")
-elif idade > 18 and idade != 19:
-    print("Você já passou do tempo de se alistar! Já se passaram {} anos desde o prazo.".format(idade - 18))
+elif 19 != idade > 18:
+    print("Você já deveria ter se alistado!\nSeu alistamento ocorreu em {} (já se passaram {} anos).".format((anoAtual - idade) + 18, anoAtual - ((anoAtual - idade) + 18)))
+else:
+    print("Você já deveria ter se alistado!\nSeu alistamento ocorreu em {} (já se passou {} ano).".format((anoAtual - idade) + 18, anoAtual - ((anoAtual - idade) + 18)))

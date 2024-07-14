@@ -7,9 +7,5 @@ print(""" _____  _    ____  _   _   _    ____    _
 numero = int(input("Digite um NÚMERO para ver sua TABUADA: "))
 
 print("\nTABUADA DO {}".format(numero))
-
-multiplicador = 1
-
-for i in range(0, 10):
-    print("{} x {:2} = {}".format(numero, multiplicador, numero * multiplicador))
-    multiplicador += 1
+for i in range(1, 11):
+    print("{} x {:2} = {}".format(numero, i, numero * i))

@@ -14,5 +14,6 @@ razao = int(input("Qual a RAZÃO da sua PA? "))
 
 print("\n10 PRIMEIROS TERMOS DA PA:")
 for i in range(1, 11):
-    print(termo)
+    print(termo, "→ ", end="")
     termo += razao
+print("FIM!", end="")

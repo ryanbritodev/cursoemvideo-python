@@ -7,6 +7,8 @@ print("""    _                  _   _                 _
  / ___ \| | | | (_) | | |\  | (_) \ V / (_) |_|
 /_/   \_\_| |_|\___/  |_| \_|\___/ \_/ \___/(_)\n""")
 
+# "i" é uma variável de controle/loop, assumindo sequencialmente os valores do intervalo especificado
+
 for i in range(10, -1, -1):
     if i == 0:
         i = "0..."

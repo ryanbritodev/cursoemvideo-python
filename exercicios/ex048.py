@@ -10,9 +10,12 @@ print(""" _   _   __
               |_|                         """)
 
 soma = 0
+num = 0
 
 for i in range(1, 501, 2):
     if i % 3 == 0:
         print(i)
+        # Contador soma 1, acumulador vai acumulando os valores
         soma += i
-print("\nSOMATÓRIO DOS NÚMEROS: {}".format(soma))
+        num += 1
+print("\nSOMATÓRIO DOS {} NÚMEROS: {}".format(num, soma))

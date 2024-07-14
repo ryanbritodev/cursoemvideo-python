@@ -9,7 +9,7 @@ print(""" __  __       _            _     _           _
 soma = 0
 
 for i in range(1, 8):
-    anoNascimento = int(input("Informe seu ANO DE NASCIMENTO: "))
+    anoNascimento = int(input("Informe ANO DE NASCIMENTO da {}° pessoa: ".format(i)))
     if date.today().year - anoNascimento <= 17:
         soma += 1
 

@@ -8,10 +8,32 @@ print("""  ___
 | | | | | | (_| | \__ \_|                           
 |_| |_| |_|\__,_|_|___(_)                           \n""")
 
-lista = list()
+maior = 0
+menor = 0
 
 for i in range(1, 6):
-    pessoa = float(input("INFORME O SEU PESO: "))
+    peso = float(input("Peso da {}ª pessoa: ".format(i)))
+    if i == 1:
+        maior = peso
+        menor = peso
+    else:
+        if peso > maior:
+            maior = peso
+        if peso < menor:
+            menor = peso
+
+if maior == menor:
+    print("\nO maior e menor peso lidos foram iguais, sendo de {}kg".format(maior))
+else:
+    print("\nO maior peso lido foi de {}kg".format(maior))
+    print("O menor peso lido foi de {}kg".format(menor))
+
+# Solução que eu cheguei ↓
+
+"""lista = list()
+
+for i in range(1, 6):
+    pessoa = float(input("INFORME O PESO DA {} PESSOA: ".format(i)))
     lista.append(pessoa)
 lista.sort()
-print("\nMAIOR PESO: {}\nMENOR PESO: {}".format(lista[4], lista[0]))
+print("\nMAIOR PESO: {}kg\nMENOR PESO: {}kg".format(lista[4], lista[0]))"""

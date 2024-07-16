@@ -1,4 +1,4 @@
-# Laços de Repetição/Iteração com Variável de Controle FOR
+# Laços de Repetição/Iteração com Variável de Controle usando FOR
 """ Se quisermos que um personagem chegue a maçã, não precisamos ficar digitando por incontáveis vezes o comado de
 "andar", nós podemos simplesmente criar uma repetição que acaba até que ele encontre a maçã, economizando espaço na
 memória e evitando a repetição excessiva. """

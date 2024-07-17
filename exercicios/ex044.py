@@ -19,9 +19,9 @@ print("""\n                      (  )   (   )  )
 """)
 print("========================================================")
 
-nome = str(input("\nQual seu NOME? ")).strip()
+nome = str(input("\nQual seu NOME? ")).strip().title()
 
-print("\nBom dia, {}!".format(nome.upper().capitalize()))
+print("\nBom dia, {}!".format(nome.upper().title()))
 print("""\n==================== CARDÁPIO ==========================
 Café ............................................... R$3
 Café com Leite ..................................... R$5

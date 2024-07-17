@@ -54,7 +54,7 @@ print("Vamos descobrir se você deve ou não se alistar?")
 sexo = str(input("Informe seu GÊNERO (masculino ou feminino): ").strip().lower())
 
 if sexo == "feminino":
-    sys.exit("Pessoas do gênero feminino não precisam se alistar!")
+    exit("Pessoas do gênero feminino não precisam se alistar!")
 elif sexo == "masculino":
     print(end="")
 else:

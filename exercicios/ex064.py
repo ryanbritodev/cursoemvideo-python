@@ -8,15 +8,12 @@ print(""" _   _   __
  | || | | | ||  __/ | | | (_) \__ \       
 |___|_| |_|\__\___|_|_|  \___/|___/       \n""")
 
-condicao = True
-soma = 0
-contador = 0
+soma = contador = 0
 
-while condicao:
-    num = int(input("Digite um número inteiro (ou 999 para parar de ler): "))
+num = int(input("Digite um número inteiro (ou 999 para parar de ler): "))
+
+while num != 999:
     soma += num
     contador += 1
-    if num == 999:
-        print("\nEncerrando as leituras...\n")
-        print("Soma entres os números: {}\nQuantidade de números digitados: {}".format(soma - 999, contador - 1))
-        condicao = False
+    num = int(input("Digite um número inteiro (ou 999 para parar de ler): "))
+print("\nVocê digitou {} números e a soma entre eles foi {}!".format(contador, soma))

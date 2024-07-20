@@ -25,5 +25,5 @@ while condicao:
         if decisao == "s":
             continue
         else:
-            print("\nObrigado! Até mais")
+            print("\nObrigado! Até mais :)")
             condicao = False

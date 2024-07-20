@@ -1,3 +1,5 @@
+import sys
+
 print(""" ____                    //\            _       
 / ___|  ___  __ _ _   _ |/_\|_ __   ___(_) __ _ 
 \___ \ / _ \/ _` | | | |/ _ \ '_ \ / __| |/ _` |
@@ -8,13 +10,28 @@ print(""" ____                    //\            _
 |  _| | | |_) | (_) | | | | (_| | (_| (__| |    
 |_|   |_|_.__/ \___/|_| |_|\__,_|\___\___|_|    """)
 
-n = int(input("\nDigite um número para saber os primeiros elementos da Sequência de Fibonacci: "))
-antecessor = 2
-sucessor = 3
+n = int(input("\nDigite um número para saber os primeiros\nelementos da Sequência de Fibonacci: "))
+anteantecessor = 0
+antecessor = 1
+contador = 2
 
-fibonacci = 1
+while True:
+    if n < 1:
+        print("\nNÚMERO INVÁLIDO!")
+        n = int(input("\nDigite um número para saber os primeiros\nelementos da Sequência de Fibonacci: "))
+    else:
+        break
 
-while fibonacci < n:
-    antecessor += sucessor
-    fibonacci += 1
-    print(antecessor)
+if n == 1:
+    print("0 → ", end="")
+elif n >= 2:
+    print("0 → 1 → ", end="")
+
+while contador < n:
+    fibonacci = anteantecessor + antecessor
+    print(fibonacci, "→ ", end="")
+    anteantecessor = antecessor
+    antecessor = fibonacci
+    contador += 1
+
+print("FIM!")

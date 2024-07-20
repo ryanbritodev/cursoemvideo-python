@@ -1,4 +1,4 @@
-import sys
+from time import sleep
 
 print("""  ____      _            _           _                 
  / ___|__ _| | ___ _   _| | __ _  __| | ___  _ __ __ _ 
@@ -19,11 +19,11 @@ num2 = int(input("DIGITE O 2° VALOR: "))
 menu = """\n==============================
           🧮 MENU 🧮
 ==============================
-1. ➕  Adição
-2. ✖️  Multiplicação
-3. 🔍  Maior Valor
-4. 🔄  Inserir Novos Números
-5. ❌  Sair
+[1] ➕  Adição
+[2] ✖️  Multiplicação
+[3] 🔍  Maior Valor
+[4] 🔄  Inserir Novos Números
+[5] ❌  Sair
 ==============================
 """
 
@@ -64,4 +64,6 @@ while loop:
         opcao = int(input("INFORME A OPÇÃO DESEJADA: "))
     elif opcao == 5:
         print("\nENCERRANDO O PROGRAMA...")
+        sleep(3)
+        print("\nPROGRAMA FINALIZADO!")
         loop = False

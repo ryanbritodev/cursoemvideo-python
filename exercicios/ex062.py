@@ -1,3 +1,5 @@
+from time import sleep
+
 print(""" ____                                     /\/|       
 |  _ \ _ __ ___   __ _ _ __ ___  ___ ___ |/\/_  ___  
 | |_) | '__/ _ \ / _` | '__/ _ \/ __/ __|/ _` |/ _ \ 
@@ -13,6 +15,7 @@ razao = int(input("Qual a RAZÃO da sua PA? "))
 inicio = 1
 termos = 10
 condicao = True
+quantidadeDeTermosTotal = 0
 
 print("\n10 PRIMEIROS TERMOS DA PA:")
 while inicio <= termos:
@@ -23,9 +26,13 @@ print("FIM!")
 
 while condicao:
     inicio = 1
-    quantidadeDeTermos = int(input("\nDeseja ver mais termos?\nInforme a quantidade ou 0 para sair: "))
+    quantidadeDeTermos = int(input("Deseja ver mais termos?\nInforme a quantidade ou 0 para sair: "))
+    quantidadeDeTermosTotal += quantidadeDeTermos
     if quantidadeDeTermos == 0:
-        print("\nFinalizando programa!")
+        print("\nProgressão finalizada com {} termos mostrados.".format(termos + quantidadeDeTermosTotal))
+        print("\nFinalizando programa...")
+        sleep(3)
+        print("Programa finalizado!")
         condicao = False
     elif quantidadeDeTermos < 0:
         print("\nTermo inválido!")
@@ -34,4 +41,4 @@ while condicao:
             print(termo, "→ ", end="")
             termo += razao
             inicio += 1
-        print("FIM!")
+        print("PAUSA")

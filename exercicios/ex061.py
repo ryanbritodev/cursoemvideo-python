@@ -17,4 +17,4 @@ while inicio <= 10:
     print(termo, "→ ", end="")
     termo += razao
     inicio += 1
-print("FIM!", end="")
+print("FIM!")

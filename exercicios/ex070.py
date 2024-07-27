@@ -32,10 +32,10 @@ while True:
     while flag != "S" and flag != "N":
         flag = str(input("Quer continuar? [S/N] ").replace(" ", "").upper())
     if flag == "N":
-        print("\n======== PROGRAMA ENCERRADO ========")
+        print("{:-^50}".format(" PROGRAMA ENCERRADO "))
         break
     else:
         continue
 print(f"O total da compra foi R${soma:.2f}")
 print(f"Temos {contValor} produtos custando mais de R$1000.00")
-print(f"Produto mais barato: {nomeMenor} | Valor: R${menor}")
+print(f"O produto mais barato foi {nomeMenor}, com o valor de R${menor}")

@@ -19,7 +19,7 @@ while True:
     tabuada = int(input("\nQuer ver a tabudada de qual valor? "))
     tamanhoMaiorTermo = len("TABUADA DO NÚMERO {}".format(tabuada))
     if tabuada < 1:
-        print(f"\nVALOR NEGATIVO INFORMADO!\n{cores['vermelho']}PROGRAMA ENCERRADO{cores['limpa']}")
+        print(f"\nVALOR NEGATIVO INFORMADO! {cores['vermelho']}PROGRAMA ENCERRADO{cores['limpa']}")
         break
     else:
         print("\n" + "=" * tamanhoMaiorTermo)

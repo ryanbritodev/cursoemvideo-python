@@ -22,6 +22,9 @@ soma = resultado = cont = 0
 while True:
     jogadaHumano = int(input("Diga um valor: "))
     parOuImpar = str(input("Par ou Ímpar? [P/I] ").replace(" ", "").upper())
+    while parOuImpar not in "PI":
+        print("\nValor inválido! Digite P ou I para escolher entre Par ou Ímpar!\n")
+        parOuImpar = str(input("Par ou Ímpar? [P/I] ").replace(" ", "").upper())
     jogadaComputador = randint(1, 10)
     soma = jogadaComputador + jogadaHumano
     if soma % 2 == 0:

@@ -7,11 +7,17 @@ print(""" _____     _          _             _
 | |_) | '__/ _ \/ __/ _ \/ __|             
 |  __/| | |  __/ (_| (_) \__ \             
 |_|   |_|  \___|\___\___/|___/             
-                 )_)                       """)
+                 )_)                       \n""")
 
-produtos = ("Lápis", 1.5, "Borracha", 2, "Caderno", 15.9, "Estojo",
-            25, "Transferidor", 4.2, "Compasso", 9.99, "Mochila",
-            120.32, "Canetas", 22.3, "Livro", 34.9)
+produtos = ("Lápis", 1.5,
+            "Borracha", 2,
+            "Caderno", 15.9,
+            "Estojo", 25,
+            "Transferidor", 4.2,
+            "Compasso", 9.99,
+            "Mochila", 120.32,
+            "Canetas", 22.3,
+            "Livro", 34.9)
 
 nome = 0
 valor = 1
@@ -23,7 +29,10 @@ print("{:^40}".format("LISTAGEM DE PREÇOS"))
 print("=" * 40)
 
 for i in range(1, quantidade):
-    print(f"{produtos[nome]}{'.' * (40 - len(produtos[nome]) - 2 - len(str(produtos[valor])))}R${produtos[valor]}")
+    nome_produto = produtos[nome]
+    preco_produto = produtos[valor]
+    pontos = '.' * (40 - len(nome_produto) - 10)
+    print(f"{nome_produto}{pontos}R$ {preco_produto:>7.2f}")
     nome += 2
     valor += 2
 

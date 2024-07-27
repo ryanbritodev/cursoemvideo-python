@@ -18,7 +18,11 @@ print("""                     ___
 /|          /\      |   |X|
 / > o        <\     |   |XX|\n""")
 
-brasileirao = ("Botafogo", "Palmeiras", "Flamengo", "Fortaleza", "São Paulo", "Bahia", "Cruzeiro", "Athletico-PR", "Red Bull Bragantino", "Atlético-MG", "Vasco da Gama", "Juventude", "Internacional", "Corinthians", "Criciúma", "Cuiabá", "EC Vitória", "Grêmio", "Fluminense", "Atlético-GO")
+brasileirao = ("Botafogo", "Palmeiras", "Flamengo", "Fortaleza",
+               "São Paulo", "Bahia", "Cruzeiro", "Athletico-PR",
+               "Red Bull Bragantino", "Atlético-MG", "Vasco da Gama",
+               "Juventude", "Internacional", "Corinthians", "Criciúma",
+               "Cuiabá", "EC Vitória", "Grêmio", "Fluminense", "Atlético-GO")
 
 print("{:-^50}".format(" TABELA BRASILEIRÃO SÉRIE A "))
 

@@ -39,4 +39,5 @@ while True:
 
 valores.sort()
 
-print(f"\nVocê digitou os valores {valores}")
+print("=-" * 30)
+print(f"Você digitou os valores {valores}")

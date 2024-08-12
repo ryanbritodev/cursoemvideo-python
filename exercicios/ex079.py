@@ -39,4 +39,9 @@ while True:
 
 valores.sort()
 
+<<<<<<< HEAD
 print(f"\nVocê digitou os valores {valores}")
+=======
+print("=-" * 30)
+print(f"Você digitou os valores {valores}")
+>>>>>>> 6b2aef8e10357f4ff86d2471dfe01288fb0cf736

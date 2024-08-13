@@ -5,7 +5,6 @@ print(""" ___                         /\/|
 |___|_| |_|___/\___|_|  \___\__,_|\___/ 
                          )_)            \n""")
 
-<<<<<<< HEAD
 valores = []
 
 for cont in range(1, 6):
@@ -14,7 +13,7 @@ for cont in range(1, 6):
     if valor > valores[4]:
         print("Adicionando ao final da lista...")
         
-=======
+
 lista = []
 
 for c in range(0, 5):
@@ -49,4 +48,3 @@ for c in range(0, 5):
 
 print("=-" * 30)
 print(f"Os valores digitados em ordem foram {lista}")
->>>>>>> 6b2aef8e10357f4ff86d2471dfe01288fb0cf736

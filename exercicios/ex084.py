@@ -2,7 +2,7 @@ dado = []
 pessoas = []
 maiorPeso = 0
 while True:
-    dado.append(str(input("Nome: ")).strip().upper().title())
+    dado.append(str(input("Nome: ")).strip().title())
     dado.append(float(input("Peso: ")))
     pessoas.append(dado.copy())
     dado.clear()
@@ -19,6 +19,10 @@ print("-=" * 30)
 menorPeso = pessoas[0][1]
 pessoasMenor = []
 pessoasMaior = []
+
+# for p in pessoas:
+#   if p[1] == maiorPeso:
+#       print(f"[{p[0]}] ", end="")
 
 for pessoa in pessoas:
     if pessoa[1] > maiorPeso:

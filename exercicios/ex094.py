@@ -6,7 +6,7 @@ while True:
     while True:
         sexo = str(input("Sexo: [M/F] ")).strip().upper()[0]
         if sexo != "M" and sexo != "F":
-            print("Opção inválida! Digite novamente.")
+            print("Opção inválida! Responda somente com M ou F.")
             continue
         else:
             break
@@ -15,7 +15,7 @@ while True:
     while True:
         flag = str(input("Quer continuar? [S/N] ")).strip().upper()[0]
         if flag != "S" and flag != "N":
-            print("Opção inválida! Tente novamente.")
+            print("Opção inválida! Responda somente com S ou N.")
         else:
             break
     pessoa = {"nome": nome, "sexo": sexo, "idade": idade}
@@ -39,12 +39,12 @@ print("- A média de idade é de {:.2f} anos.".format(mediaIdade))
 print("- As mulheres cadastradas foram: ", end="")
 for mulher in listaMulheres:
     print(mulher, end=" ")
-print("\n- Lista das pessoas que estão acima da média: \n")
+print("\n- Lista das pessoas que estão acima da média:")
 
 for c in pessoas:
     if c["idade"] > mediaIdade:
-        print(f"nome = {c["nome"]}; sexo = {c["sexo"]}; idade = {c["idade"]};")
+        print(f"    nome = {c["nome"]}; sexo = {c["sexo"]}; idade = {c["idade"]};")
     else:
         continue
 
-print("\n<< ENCERRADO >>")
+print("<< ENCERRADO >>")

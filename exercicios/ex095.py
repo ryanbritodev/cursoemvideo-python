@@ -19,14 +19,16 @@ while True:
 
 print("-=" * 35)
 
-print("Cód. Nome               Gols      Total")
+print("Cód. Nome           Gols           Total")
 print("---------------------------------------")
 
 codigo = 0
 
-for jogador in jogadores:
-    print(f'{codigo:>4} {jogador["nome"]:<15} {jogador["gols"]} {jogador["total"]:<5}')
-    codigo += 1
+for k, v in enumerate(jogadores):
+    print(f"{k:>4}", end=" ")
+    for d in v.values():
+        print(f"{str(d):<15}", end="")
+    print()
 print("---------------------------------------")
 
 while True:
